@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DeliasVisualCommerce" parallel="false">
+<parameter name="appURL" value="https://www.murad.com/muradskincare"/>
+ <test name="FirefoxTest">
+  <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.tests.GalleryPageTest"/>
+      <class name="com.tests.ProductPageTest"/>
+    </classes>
+  </test>
+  <!-- <test name="ChromeTest">
+   <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.tests.GalleryPageTest"/>
+      <class name="com.tests.ProductPageTest"/>
+    </classes>
+  </test>
+  <test name="IETest">
+   <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="com.tests.GalleryPageTest"/>
+    </classes>
+  </test> -->
+</suite>

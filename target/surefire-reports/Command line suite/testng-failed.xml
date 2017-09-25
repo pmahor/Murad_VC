@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.tests.GalleryPageTest"/>
+      <class name="com.tests.ProductPageTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.tests.GalleryPageTest">
+        <methods>
+          <include name="facebookLogin"/>
+          <include name="facebookShare"/>
+          <include name="clickonFBSharebtn"/>
+        </methods>
+      </class> <!-- com.tests.GalleryPageTest -->
+      <class name="com.tests.ProductPageTest">
+        <methods>
+          <include name="viewImagePopup_p"/>
+          <include name="clickonTweetbtn"/>
+          <include name="clickonFBSharebtn"/>
+          <include name="facebookshare"/>
+          <include name="facebooklogin"/>
+          <include name="twittershare"/>
+        </methods>
+      </class> <!-- com.tests.ProductPageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

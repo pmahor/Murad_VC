@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DeliasVisualCommerce]">
+  <parameter name="appURL" value="https://www.murad.com/muradskincare"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="FirefoxTest">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.tests.ProductPageTest"/>
+    </classes>
+  </test> <!-- FirefoxTest -->
+  <test name="FirefoxTest(failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.tests.ProductPageTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="facebooklogin"/>
+        </methods>
+      </class> <!-- com.tests.ProductPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [DeliasVisualCommerce] -->
